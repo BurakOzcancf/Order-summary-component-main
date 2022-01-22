@@ -1,0 +1,118 @@
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Red Hat Display";
+  min-height: 100vh;
+  background-color: var(--paleBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  min-width: 21.25em;
+  max-width: 28.125em;
+  background-color: white;
+  border-radius: 1em;
+  margin: 1em;
+}
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 45/22;
+  border-radius: 1em 1em 0 0;
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+}
+
+.container {
+  padding: 0 1.5em;
+}
+
+.title {
+  margin: 1em;
+  font-weight: 900;
+}
+
+p {
+  line-height: 1.5em;
+  font-size: 1em;
+  padding: 0 1.38em 0.5em;
+  color: var(--desaturatedBlue);
+}
+
+.membership {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: var(--veryPaleBlue);
+  border-radius: 0.6em;
+  display: flex;
+  justify-content: space-between;
+}
+.plan {
+  margin-left: -15%;
+}
+.plan-annual {
+  font-weight: 700;
+}
+.plan-price {
+  color: var(--desaturatedBlue);
+}
+.plan-change {
+  text-decoration: underline;
+  color: var(--brightBlue);
+}
+.membership-payment {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  background-color: var(--brightBlue);
+  color: var(--paleBlue);
+  border: none;
+  border-radius: 0.5em;
+  font-weight: 900;
+}
+
+.membership-cancel {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  color: var(--desaturatedBlue);
+  font-weight: 900;
+}
+
+.attribution {
+  padding: 1em 0;
+}
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
